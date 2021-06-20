@@ -1,0 +1,29 @@
+body{
+    font-family: 'Microsoft YaHei UI';
+}
+body,p{
+    margin: 0;
+    padding: 0;
+}
+*{
+    /*box-shadow: 0 0 0 1px saddlebrown;*/
+}
+.menu,.prolist{
+    display: flex;
+    justify-content: center;
+}
+.menu a,.detals{
+    padding: 10px 30px;
+    color:black;
+    display: block;
+    text-decoration: none;
+}
+.menu .active{
+    color: white;
+    background-color: darkblue;
+}
+
+.proactive{
+    background-color: red;
+    color: white;
+}

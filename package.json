@@ -1,0 +1,25 @@
+{
+    "name": "node_test",
+    "version": "2.1.18",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "node server.js build",
+        "build_+v_0.0.1": "node server.js build_dev 2 1",
+        "build_+v_0.1.0": "node server.js build_dev 1 1",
+        "build_+v_1.0.0": "node server.js build_dev 0 1",
+        "dev": "node server.js",
+        "dev_supervisor": "supervisor server.js",
+        "clear_build": "node server.js clear_build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "opn": "^6.0.0",
+        "vue": "^2.6.14",
+        "vue-server-renderer": "^2.6.14"
+    },
+    "devDependencies": {},
+    "hello": "hello"
+}

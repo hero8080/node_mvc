@@ -1,0 +1,8 @@
+<div>
+    <div class="menu">
+        <a href=""></a>
+        <a :href="item"  v-for="item in menu"  :class="{active:item==('/'+allPath[0])}">
+            {{item}}
+        </a>
+    </div>
+</div>

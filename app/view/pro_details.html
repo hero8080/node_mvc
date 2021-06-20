@@ -1,0 +1,22 @@
+<html>
+<head>
+    <!-- 使用双花括号(double-mustache)进行 HTML 转义插值(HTML-escaped interpolation) -->
+    <title>{{ cpath }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!--vue-ssr-outlet-->
+<top></top>
+<g_menu></g_menu>
+
+<div>
+    {{ allPath }}
+</div>
+
+<div class="prolist">
+    <a v-for="item in prolist" class="detals" :class="{proactive:item==(allPath[1]||1)}" :href="'/pro/'+item">{{item}}</a>
+</div>
+<bottom></bottom>
+
+</body>
+</html>

@@ -36,7 +36,7 @@ let log = (color = '', log = '', tips = 'tips:') => {
 * */
 let errorMsg = (res, resMsg = '') => {
     res.writeHead(200, {"Content-Type": "text/html;charset='utf-8'"});
-    res.end(`<div style="box-sizing: border-box;padding: 30px 50px"><div style="background-color: #f7eeee;box-sizing: border-box;line-height: 1;padding:15px 20px;border-radius: 5px;color: red">${resMsg}</div></div>`)
+    res.end(`<html><head><meta charset="utf-8"></head><body><div style="box-sizing: border-box;padding: 30px 50px"><div style="background-color: #f7eeee;box-sizing: border-box;line-height: 1;padding:15px 20px;border-radius: 5px;color: red">${resMsg}</div></div></body></html>`)
 }
 
 /*
@@ -116,7 +116,8 @@ let getComponents = (data) => {
                     ...require(tempPath + item + '/' + item + '.js'),
                     ...data
                 }
-            }
+            },
+            props:['data']
         }
     })
     return fileList

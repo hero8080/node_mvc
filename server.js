@@ -397,7 +397,7 @@ let build = (path = './app/controller', fPath = '', toFilePath) => {
 }
 
 let createVersionFile = (prePath, version) => {
-    fs.writeFileSync(prePath + '/.v', `<div style="box-sizing: border-box;padding: 30px 50px"><div style="background-color: #e9f7ff;box-sizing: border-box;line-height: 1;padding:15px 20px;border-radius: 5px;">${version}</div></div>`, {encoding: 'utf8'})
+    fs.writeFileSync(prePath + '/.v', `<html><head><meta charset="utf-8"></head><body><div style="box-sizing: border-box;padding: 30px 50px"><div style="background-color: #e9f7ff;box-sizing: border-box;line-height: 1;padding:15px 20px;border-radius: 5px;">${version}</div></div></body></html>`, {encoding: 'utf8'})
 }
 
 /*
